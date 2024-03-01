@@ -6,6 +6,10 @@
     <title>Day-1</title>
   </head>
   <body>
+    <div id="nav1" class="same">Home</div>
+    <!-- id should be Unique but classes can be same -->
+    <div id="nav2" class="same">CON</div>
+    <div id="nav3" class="same">FOOT</div>
     <p>This is a paragraph of text.</p>
     <!-- The <p> tag in HTML is used to define a paragraph of text, block-level element,new line -->
 
@@ -66,8 +70,8 @@
     <!-- video tag used to add video,controls: Adds playback controls (play, pause, volume) to the video player,autoplay: INLINE element -->
 
     <!-- The <audio> tag in HTML is used for audio -->
-    <table> 
-        <!-- the <table> element is used to create tables -->
+    <table>
+      <!-- the <table> element is used to create tables -->
       <thead>
         <tr>
           <th>Good</th>
@@ -88,5 +92,42 @@
         </tr>
       </tbody>
     </table>
+    <h1>Contact Us</h1>
+    <form action="" method="POST">
+      <div>Name: <input placeholder="Enter your name" required type="text" name="user_name" id="name" /></div><br>
+      <div>Email: <input placeholder="Enter your Email" type="email" name="user_email" id="email" /></div><br>
+      <div>
+        Message:
+        <textarea required
+          name="usermessage"
+          id="message"
+          cols="60"
+          rows="10"
+        ></textarea>
+      </div><br>
+
+      <div>Number: <input required type="number" name="usernumber" id="number" /></div>
+      <div><br>
+
+        Gender:
+        <select name="usergender" id="gender">
+          <option value="">Choose One of them</option>
+          <option value="male">MALE</option>
+          <option value="Female">FEMALE</option>
+        </select>
+      </div><br>
+      <div>
+        Frontend: <input required type="checkbox" name="skills" id="Frontend" /> Backend:
+        <input type="checkbox" name="skills" id="Backend" />
+      </div><br>
+      <fieldset>
+        Cash: <input required type="radio" name="payment" id="cash" /> Bank:
+        <input type="radio" name="payment" id="Bank" />
+      </fieldset>
+      <div><br>
+        Password: <input required type="password" name="password" id="password" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
   </body>
 </html>
