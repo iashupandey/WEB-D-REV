@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day-1</title>
-</head>
-<body>
-    <p>This is a paragraph of text.</p>    <!-- The <p> tag in HTML is used to define a paragraph of text, block-level element,new line -->
+  </head>
+  <body>
+    <p>This is a paragraph of text.</p>
+    <!-- The <p> tag in HTML is used to define a paragraph of text, block-level element,new line -->
 
-    <i>Ashu Pandey.</i> <!-- <em>Ashu Pandey.</em>The <em> tag in HTML is used to emphasize text. It typically renders the enclosed text in italics by default -->
-    <p>This is <span style="color: red;">red</span> text.</p>    <!-- span is a tag in HTML used to group inline-elements together and apply styles -->
+    <i>Ashu Pandey.</i>
+    <!-- <em>Ashu Pandey.</em>The <em> tag in HTML is used to emphasize text. It typically renders the enclosed text in italics by default -->
+    <p>This is <span style="color: red">red</span> text.</p>
+    <!-- span is a tag in HTML used to group inline-elements together and apply styles -->
 
-    <hr><!-- horizontal rule -->
+    <hr />
+    <!-- horizontal rule -->
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, labore?</p>
 
+    <a href="URL">Link Text</a>
+    <!-- The anchor tag <a>is used in HTML to create hyperlinks. -->
+    <p>Link for <a href="https://www.google.com">GOOGLE</a></p>
+    <p>Target <a href="https://www.google.com" target="_blank">GOOGLE</a></p>
+    <!-- target: Specifies where to open the linked document.  -->
+    <abbr title="Click for google"
+      ><a href="https://www.google.com" target="_blank"><p>GOOGLE</p></a></abbr
+    >
+    <!-- The <abbr> HTML element represents an abbreviation -->
+    <ul>
+      <li>Ashu</li>
+      <li>Kr</li>
+      <!-- Unordered lists are used when the order of items doesn't matter-->
+      <li>Pandey</li>
+    </ul>
 
+    <ol>
+      <li>Ashu</li>
+      <li>Kr</li>
+      <!--  Ordered lists are used when the order of  items matters, we can change number using type-->
 
-    
-</body>
+      <li>Pandey</li>
+    </ol>
+    <ol type="A">
+      <!--  we can change number using type-->
+      <li>Ashu</li>
+      <li>Kr</li>
+
+      <li>Pandey</li>
+    </ol>
+    <img src="1jpg.jpg" width="280px" alt="If image not load" />
+    <img src="1jpg.jpg" width="280px" alt="If image not load" />
+    <img src="1jpg.jpg" width="280px" alt="If image not load" />
+    <img src="1jpg.jpg" width="280px" alt="If image not load" />
+    <img src="1jpg.jpg" width="280px" alt="If image not load" />
+    <!--src: Specifies the URL or path to the image. This attribute is required.
+        alt: Provides alternative text for the image. It's displayed if the image fails to load -->
+
+    <video
+      src="video.mp4"
+      width="300px"
+      height="400px"
+      controls
+      autoplay
+    ></video>
+    <!-- video tag used to add video,controls: Adds playback controls (play, pause, volume) to the video player,autoplay: INLINE element -->
+
+    <!-- The <audio> tag in HTML is used for audio -->
+    <table> 
+        <!-- the <table> element is used to create tables -->
+      <thead>
+        <tr>
+          <th>Good</th>
+          <th>Better</th>
+          <th>Best</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aman</td>
+          <td>Deo</td>
+          <td>Ashu</td>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>Aryan</td>
+          <td>Nikk</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
