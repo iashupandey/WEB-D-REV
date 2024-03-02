@@ -85,7 +85,7 @@ body {
   background-attachment: fixed;
   background-color: aqua;
   background-attachment: fixed;
-} */
+}
 ul{
     list-style-type: disc;
     list-style-position: outside ;
@@ -107,6 +107,52 @@ body {
     height: 200px;
     overflow: auto;
   }
-/* .ok{
+.ok{
     background-color: palevioletred;
 } */
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+header {
+  padding: 50px;
+  background-color: rebeccapurple;
+}
+header > a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header>a:hover{
+    color: black;
+    font-weight: 600;
+}
+section {
+  height: 800px;
+  width: 1000px;
+  margin: auto;
+  background-color: rgb(178, 178, 178);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+section>h1{
+    font-size: 40px;
+    border: 2px solid brown;
+}
+section>img{
+    width: 748px;
+}
+footer {
+  width: 1000px;
+  margin: auto;
+  background-color: #1d1b1b;
+  text-align: center;
+  padding: 50px 0px;
+}
+footer > a {
+  color: wheat;
+  text-decoration: none;
+}
