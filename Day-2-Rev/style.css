@@ -63,23 +63,50 @@ a[href="instagram"]{
  }
  h1~p{
     color: fuchsia;
- } */
+ }
 p {
-  color: white;
+  color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
   font-style: italic;
   font-weight: bold;
   text-align: justify;
   text-transform: capitalize;
-  /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.663); */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.663);
 }
 h1 {
-  color: palegreen;
-  /* text-shadow: 0 10px 5px black; */
+  color: rgb(251, 152, 201);
+  font-size: 100%;
+  text-shadow: 0 10px 5px black;
 }
 body {
+  font-size: 20px;
   background-repeat: no-repeat;
-  background-image: url("1jpg.jpg");
   background-attachment: fixed;
-}
+  background-color: aqua;
+  background-attachment: fixed;
+} */
+ul{
+    list-style-type: disc;
+    list-style-position: outside ;
+  }
+body {
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: aqua;
+    background-attachment: fixed;
+  }
+  .small{
+
+    background-color: wheat;
+    margin: 20px 50px 30px 60px;
+    padding: 20px;
+    border: 11px solid black;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+  }
+/* .ok{
+    background-color: palevioletred;
+} */
