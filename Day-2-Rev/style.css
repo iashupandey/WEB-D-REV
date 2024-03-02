@@ -48,7 +48,7 @@ a[href="instagram"]{
  h1,em,div,cust{
     color: chocolate;
  } */
- /* span>p{
+/* span>p{
     background-color: aqua;
  }
  li{
@@ -58,10 +58,28 @@ a[href="instagram"]{
  li li{
     color: blueviolet  ;
  } */
- h1+p{
+/* h1+p{
     background-color: chartreuse;
  }
  h1~p{
     color: fuchsia;
- }
-
+ } */
+p {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bold;
+  text-align: justify;
+  text-transform: capitalize;
+  /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.663); */
+}
+h1 {
+  color: palegreen;
+  /* text-shadow: 0 10px 5px black; */
+}
+body {
+  background-repeat: no-repeat;
+  background-image: url("1jpg.jpg");
+  background-attachment: fixed;
+}
