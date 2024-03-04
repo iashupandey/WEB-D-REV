@@ -1,0 +1,33 @@
+div {
+  width: 100px;
+  height: 100px;
+  font-size: x-large;
+  background-color: aqua;
+  border: 2px solid salmon;
+}
+body {
+  margin: 0;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  border: 2px solid green;
+  /* flex-flow: row-reverse wrap; */
+
+  /* flex-flow property me hmn direction ur flex wrap 1 sath de skte hai */
+  /* combine 2 prop */
+
+  /* flex-wrap: wrap;
+    align-content: center; */
+  /* justify-content: space-between;
+    align-items: center; * /
+    /* flex-direction: column; */
+
+  /* justify-content: space-evenly; */
+}
+.two {
+    flex: 5 2 150px;
+  /* flex-grow: 2; */
+   /* 2 times faster grow hoga */
+   /* flex-shrink: 2; */
+   /* 2 times jldi chota hoga */
+}
