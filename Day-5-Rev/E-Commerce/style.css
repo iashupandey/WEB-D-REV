@@ -1,12 +1,19 @@
 body {
   margin: 0;
 }
+* {
+  scroll-behavior: smooth;
+}
 nav {
   /* border: 2px solid black; */
   height: 4vmax;
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
 }
 .left {
   /* border: 2px solid salmon; */
@@ -52,6 +59,8 @@ nav {
 }
 .right > img {
   width: 2.5vmax;
+  margin: 1vmax;
+  cursor: pointer;
 }
 .home {
   /* border: 2px solid crimson ; */
@@ -68,7 +77,19 @@ nav {
 #rightContainer {
   display: flex;
   justify-content: flex-end;
+  /* margin-left: 10vmax; */
 }
+
+/* @media (max-width: 902px) { */
+/* Add the selector you want to apply the styles to */
+/* For example, if you want to target a specific class or ID */
+/* Replace .container or #container with your desired selector */
+/* #rightContainer {
+    display: flex;
+    align-items: center;
+  }
+} */
+
 #rightContainer > img {
   margin-right: 7vmax;
   filter: drop-shadow(0 0 20px black);
@@ -88,7 +109,7 @@ nav {
 }
 #leftContainer > h2 {
   font-size: 2vmax;
-  margin-top: -10%;
+  margin-top: -8%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   /* border: 2px solid salmon; */
@@ -116,3 +137,61 @@ nav {
 }
 /* ->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->-> */
 /* ->->->->->->->->->->PRODUCTS DESIGN BELOW <-<-<-<-<-<-<-<-<-<-<-<-<-<-   */
+
+/* #products {
+
+  border: 1px solid gold;
+} */
+
+#products > h1 {
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2.5vmax;
+  border-bottom: 5px solid saddlebrown;
+  width: 25vw;
+  padding: 1vmax;
+}
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+  height: 100%;
+  max-width: 80vw;
+  margin: auto;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------------------------- */
+.product {
+  /* border: 2px solid rebeccapurple; */
+  transition: all 0.3s;
+  cursor: pointer;
+  /* width: 22vmax; */
+  height: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  margin: 1vmax;
+}
+.product > img {
+  /* height: 4vmax; */
+  width: 20vmax;
+}
+.product > h4 {
+  margin: 2%;
+}
+.product > h5 {
+  margin: 0;
+}
+.product:hover {
+  transform: translateY(-10px);
+}
+
+/* ---------------------------------------------------------------------------- */
+footer {
+  margin-top: 10vmax;
+  height: 10vmax;
+  background-color: black;
+  color: white;
+}
