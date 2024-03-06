@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+.box {
+  background-color: rgb(45, 45, 45);
+  height: 100px;
+  width: 100px;
+  font: bold 2rem cursive;
+  color: white;
+  margin: 2vmax;
+  /* transition-property: background-color; */
+  /* transition-duration: .5s; */
+  /* short hand prop for transition */
+  /* transition: background-color 1s ease-in 1s,color 1s ease-out 1s; */
+  /* transition: all 1s; */
+}
+/* .box:hover {
+  background-color: tomato;
+  color: aqua;
+  width: 80%;
+  box-shadow: 10px 10px 20px black;
+  transform: skewX(30deg);
+  transform: translate(100px);
+  transform: scale(1.2);
+  transform: rotateX(90deg);
+
+} */
+#box1{
+    /* animation-name: myanimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5; */
+    animation: myanimation 5s linear 1s infinite alternate;
+}
+@keyframes myanimation {
+    
+    0%{
+        background-color: red;
+        transform: scale(5);
+    }
+    50%{
+        border-radius: 100%;
+        background-color: aqua;
+
+    }
+    100%{
+        background-color: yellow;
+    }
+    
+}/* from{
+        background-color: red;
+
+    }to{
+background-color: chartreuse;
+    } */
