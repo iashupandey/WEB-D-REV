@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>BAT BALL STUMP GAME</h1>
+    <button
+      onclick="
+    let computerChoice =  generateComputerChoice();
+       
+
+        let resultMsg;
+        if (computerChoice === 'Ball') {
+          resultMsg = 'User Won';
+        } else if (computerChoice === 'Bat') {
+          resultMsg = 'It\'s a tie';
+        } else if (computerChoice === 'Stump') {
+          resultMsg = 'Computer Won';
+        }
+        alert(`You have chosen Bat. Computer choice is ${computerChoice} and ${resultMsg}`);
+      "
+    >
+      Bat
+    </button>
+
+    <button
+      onclick="
+
+computerChoice = generateComputerChoice();
+        // resultMsg;
+        if (computerChoice === 'Ball') {
+          resultMsg = `It's a tie`;
+        } else if (computerChoice === 'Bat') {
+          resultMsg = 'Computer Won';
+        } else if (computerChoice === 'Stump') {
+          resultMsg = 'User Won';
+        }
+        alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);
+      "
+    >
+      Ball
+    </button>
+    <button
+      onclick="
+
+computerChoice =generateComputerChoice();
+// resultMsg;
+         if (computerChoice === 'Ball') {
+           resultMsg =  'Computer Won';
+         } else if (computerChoice === 'Bat') {
+           resultMsg = ' User Won';
+         } else if (computerChoice === 'Stump') {
+           resultMsg = `It's a tie`;
+         }
+         alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);
+       "
+    >
+      Stump
+    </button>
+
+    <script>
+      function generateComputerChoice() {
+        let randomNumber = Math.random() * 3;
+
+        if (randomNumber > 0 && randomNumber <= 1) {
+          return "Bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          return "Ball";
+        } else {
+          return "Stump";
+        }
+      }
+    </script>
+  </body>
+</html>
